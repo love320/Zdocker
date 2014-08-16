@@ -48,20 +48,6 @@
 		</table>
 		</div>
 		
-		<form class="form-inline"  name="formsearch" role="search" method="post">
-		  <input type="hidden" name="index" value="${page.index}"  id="formindex"/>
-		  <input type="hidden" name="order" value="desc" />
-		  <input type="hidden" name="orderBy" value="id"/>
-		  <div class="form-group col-xs-12 col-sm-6 col-md-8">
-	      </div>
-	      <div class="form-group col-xs-12 col-md-3" style="padding-top: 20px;">
-		    	<input type="text" class="form-control" name="name_OR_email_LIKES" value="${page.p.name_OR_email_LIKES}" placeholder="姓名 或 Email">
-		  </div>
-		  <div class="form-group col-xs-12 col-md-1" style="padding-top: 20px;">
-		  		<button type="submit" class="btn btn-default">搜索</button>
-		  </div>
-		</form>
-		
 		
 	</div>
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"></div>

@@ -35,8 +35,8 @@ public class ImageServer {
 	public Map get(String Id) {
 		String path = "/images/"+Id+"/json";
 		String json = http.get(AppPath.dockerPath+path );
-		Map map =  JsonUtils.objectFromJson(json, Map.class);
-		return map;
+		if(json != null) return  JsonUtils.objectFromJson(json, Map.class);
+		return null;
 	}
 	
 	public Map getAll(String Id) {

@@ -19,7 +19,7 @@
         </div>
         <div class="modal-footer buildProgress" >
 	        <div class="progress">
-			  <div class="progress-bar progress-bar-striped"  role="progressbar" aria-valuenow="2" aria-valuemin="0" aria-valuemax="100" style="width: 2%">
+			  <div class="progress-bar progress-bar-striped"  role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 2%">
 			  	 <span>处理中...</span>
 			  </div>
 			</div>
@@ -34,12 +34,13 @@
 				var name = $('#buildName').val();
 				if(name.length > 0){
 					$('.buildProgress').show(function(){
-						$('.progress .progress-bar').css('width', '30%' );
+						$('.progress .progress-bar').css('width', '75%' );
 					});
 					var url = "${base}/runapp/build/"+$(this).attr('data')+"?name="+name;
 					$.get(url,function(data){
 						$('.progress .progress-bar').css('width', '100%' );
 						$('.progress .progress-bar span').html('发布完成');
+						if(data == 'ok') location.href = '${base}/runapp/${packid[0]}';
 					});
 				}
 			});

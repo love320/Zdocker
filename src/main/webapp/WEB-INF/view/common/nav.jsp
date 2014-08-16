@@ -18,8 +18,8 @@
           	  <li class="upfile"><a href="${base}/packages/list">项目管理</a></li>
               <li class="statusnav"><a href="${base}/images/list">镜像管理</a></li>
               <li class="gatewaynav"><a href="${base}/containers/list">容器管理</a></li>
-              <li class="upfile"><a href="${base}/upfile/list">上传文件</a></li>
-		      <li><a href="${base}/user/logout">退出</a></li>
+              <!-- <li class="upfile"><a href="${base}/upfile/list">上传文件</a></li>
+		      <li><a href="${base}/user/logout">退出</a></li> -->
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <!-- <li class="active"><a href="#">关于我们</a></li> -->
