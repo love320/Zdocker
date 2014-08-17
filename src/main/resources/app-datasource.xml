@@ -17,11 +17,11 @@
 	</bean>
 	
 	<!-- 定义数据源Bean-->  
-    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">   
+    <bean id="dataSource" class="app.utils.ZDriverManagerDataSource">   
         <!-- 指定连接数据库的驱动 -->  
         <property name="driverClassName" value="org.sqlite.JDBC" />  
         <!-- 指定连接数据库的URL -->  
-        <property name="url" value="jdbc:sqlite:/home/love320/work/git/Zdocker/src/main/resources/sqlite" />  
+        <property name="url" value="sqlite" />  
     </bean>
 
 </beans>

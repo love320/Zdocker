@@ -125,7 +125,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>gateway</finalName>
+		<finalName>dockerweb</finalName>
 		<plugins><!-- tomcat 的插件 -->
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
