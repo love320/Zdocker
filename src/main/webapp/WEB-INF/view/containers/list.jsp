@@ -34,8 +34,6 @@
 				<td>
 				
 					<button class="btn btn-default btn-xs docker_start_page"  data="${xx.Id }">启动</button>
-				
-					<a href="${base}/containers/${xx.Id}/start" class="btn btn-info btn-xs" role="button">启动</a>
 					<a href="${base}/containers/${xx.Id}/stop" class="btn btn-danger btn-xs" role="button">停止</a>
 					<a href="${base}/containers/${xx.Id}/restart" class="btn btn-default btn-xs" role="button">重启</a>
 					<a href="${base}/containers/${xx.Id}/kill" class="btn btn-danger btn-xs" role="button">杀死</a>

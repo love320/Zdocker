@@ -6,7 +6,7 @@ public class ZDriverManagerDataSource extends DriverManagerDataSource{
 
 	@Override
 	public void setUrl(String url) {
-		super.setUrl(AppPath.RootPath()+url);
+		super.setUrl("jdbc:sqlite:"+AppPath.RootPath()+url);
 	}
 	
 	
