@@ -63,8 +63,8 @@
 			});
 			$('.docker_delete').click(function(){
 				var url = "${base}/images/"+$(this).attr('data')+"/delete";
-				$.getJSON(url,function(data){
-					alert(data);
+				$.get(url,function(data){
+					if(data == 'ok') location.href = '${base}/images/list';
 				});
 			});
 		});
